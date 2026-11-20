@@ -8,7 +8,7 @@ export const authOptions: AuthOptions = {
         GithubProvider({
             clientId: process.env.GITHUB_ID || "",
             clientSecret: process.env.GITHUB_SECRET || "",
-            issuer: "https://github.com",
+            issuer: "https://github.com/login/oauth",
             authorization: { params: { scope: "read:user user:email read:org" } },
         }),
         // Fallback for Hackathon/Dev (if ENABLE_DEMO_MODE is true)
